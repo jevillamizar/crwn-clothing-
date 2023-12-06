@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BaseButton = styled.button`
-  min-width: 165px;
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
@@ -24,7 +23,7 @@ export const BaseButton = styled.button`
     border: 1px solid black;
   }
 `;
-
+  
 export const GoogleSignInButton = styled(BaseButton)`
   background-color: #4285f4;
   color: white;
