@@ -7,14 +7,14 @@ import Spinner from "../../components/spinner/spinner.component";
 
 import {
   selectCategoriesMap,
-  selectIsCategoriesIsLoading,
-} from "../../store/categories/categories.selector";
+  selectIsLoading,
+} from "../../store/categories/category.selector";
 import { CategoryContainer, Title } from "./category.styles";
 
 const Category = () => {
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
-  const isLoading = useSelector(selectIsCategoriesIsLoading);
+  const isLoading = useSelector(selectIsLoading);
   const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
